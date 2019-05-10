@@ -64,6 +64,7 @@ depends=(
   opencore-amr
   openjpeg2
   opus
+  raspberrypi-firmware
   sdl2
   speex
   srt
@@ -163,6 +164,8 @@ build() {
     --enable-omx \
     --enable-shared \
     --enable-version3 \
+    --enable-omx-rpi \
+    --enable-mmal \
     $CONFIG
 
   make
